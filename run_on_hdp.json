@@ -1,0 +1,15 @@
+{
+  "kafkaSource": {
+    "bootstrapServer": "sandbox-hdp.hortonworks.com:6667",
+    "consumerGroupId": "dstreams_task_consumer_group",
+    "topic": "tweets_topic",
+    "autoOffsetReset": "latest"
+  },
+  "kafkaDestination": {
+    "bootstrapServer": "sandbox-hdp.hortonworks.com:6667",
+    "topic": "tweets_count_topic",
+    "options": {}
+  },
+  "checkpointDirectory": "/user/aliaksei/dstreams_checkpoint",
+  "microBatchDurationMillis": 500
+}
